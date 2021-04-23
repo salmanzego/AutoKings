@@ -1,0 +1,415 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: #000 !important;
+}
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+/* sidebar style start */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:  #fcb735;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar img{
+    width: 5rem;
+    height: 5rem;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn {
+    margin: 10px;
+    z-index: 1;  
+    float: right;  
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: #fcb735;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .openbtn:hover {
+    background-color: #fcb735;
+    color:#f1f1f1;
+  }
+  #main {
+    transition: margin-left .5s;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+ /* sidebar style end*/
+
+/* NavBar start */
+nav{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.navbar-brand{
+  position: absolute;
+  width: 4rem;
+    height: 4rem;
+  margin: 0px;
+  margin-left: 1rem;
+}
+/* NavBar end */
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.slider{
+  width:100%;
+  height:34.375rem;
+  overflow:hidden;
+}
+/* banner */
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+.banner video{
+  z-index: -100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: 1s opacity;
+}
+
+.banner h1{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color:#fcb735 ;
+  font-size: 5em;
+}
+.banner .joinbtn{
+  position: absolute;
+  text-align: center;
+  background-color:#fcb735 ;
+  margin-top: 250px;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline-style: none;
+}
+/* banner End */
+
+/* Content */
+.admins{
+  background-color:  #fcb735;
+  z-index: 0;
+  width: 100%;
+}
+/* admins */
+.admins .title{
+  color: #000;
+  margin-top: 50px;
+}
+.swiper-container {
+ z-index: 0 !important; 
+  width: 100%;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  height: 500px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image:none;
+}
+
+
+.contact-card {
+  width:14em;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #fcb735;
+  background-color:black;
+  border-radius: 1em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.125s ease-in-out;
+  -webkit-transition: 0.125s ease-in-out;
+  -moz-transition: 0.125s ease-in-out;
+}
+.contact-card:hover {
+  transform: translateY(-0.5em);
+}
+.contact-card__header-image {
+  width: 100%;
+  height: 6em;
+  padding-top: 2em;
+  background-size: cover;
+  background-color:black;
+}
+.contact-card__avatar {
+  width: 6em;
+  height: 6em;
+  margin: auto;
+ 
+  background-size: cover;
+  background-color:black;
+  border-radius: 100%;
+  border: white .2em solid;
+}
+.contact-card__name {
+  margin-top: 3em;
+  margin-bottom: .5em;
+  font-size: 1.125rem;
+}
+.contact-card__place {
+  color:#fcb735;
+}
+.contact-card__footer {
+  margin-top: .5em;
+  padding: 1em 0;
+  background-color:black;
+}
+.contact-card__footer__link {
+  display: inline-block;
+  font-size: 1.125rem;
+  transition: 0.125s ease-in-out;
+  -webkit-transition: 0.125s ease-in-out;
+  -moz-transition: 0.125s ease-in-out;
+}
+.contact-card__footer__link a {
+  color:#fcb735;
+}
+.contact-card__footer__link a:hover {
+  color:#fcb735;
+}
+.contact-card__footer__link:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+}
+.seeall a{
+  font-weight: bold;
+  transition: 0.3s;
+  color: #000;
+}
+.seeall a:hover{
+  text-decoration: none;
+  font-size: 18px;
+}
+/* admins End */
+/* Events Start */
+.events {
+  background-color: #000;
+  width: 100%;
+  height: 500px;
+}
+.events .title{
+  color: #fcb735;
+  margin-top: 50px;
+}
+
+.events .rmnder{
+  color: #fcb735;
+  margin-top: 150px;
+}
+
+/* Events End */
+/* products Start */
+ .products{
+   width: 100%;
+   height: 500px;
+   background-color: #fcb735;
+ }
+ .products .title{
+   color: #000;
+ }
+ 
+.products .rmnder{
+  color: #000;
+  margin-top: 150px;
+}
+
+/* products End */
+/* Content End*/
+/* Footer Start */
+footer{
+  padding: 10px;
+  background-color: #000;
+  width: 100%;
+}
+footer p{
+  color: #f1f1f1;
+  opacity: 70%;
+}
+/* Footer End */
+
+/* Events Page Start */
+
+.headinge{
+  color: #fcb735;
+  margin-top: 10px;
+}
+
+.Update{
+  color: #fcb735;
+  margin-top: 40vh;
+  font-size: 60px;
+ 
+}
+/* Events Page End */
+/* products Page Start */
+.headingp{
+  color: #fcb735;
+  margin-top: 10px;
+}
+
+/* products Page End */
+/* about page Start */
+.fabin{
+background-image: url('../images/fabin.jpg');
+}
+.abhi{
+  background-image: url('../images/abhi\ malappuram.jpg');
+  }
+.ajmal{
+  background-image: url('../images/Ajmal\ malappuram.jpg');
+  }
+  .arjun{
+    background-image: url('../images/Arjun\ Kozhikode.jpg');
+    }
+    .ashiq{
+      background-image: url('../images/Ashiq\ Mohammed\ malappuram.jpg');
+      }
+      .jishnu{
+        background-image: url('../images/Jishnu\ Wayanad.jpg');
+        }
+        .murshid{
+          background-image: url('../images/Murshid\ Rayamangalam.jpg');
+          }
+          .nandu{
+            background-image: url('../images/Nandhu\ Wayanad.jpg');
+            }
+            .nitheesh{
+              background-image: url('../images/Nitheesh\ kanyakumari.jpg');
+              }
+              .razal{
+                background-image: url('../images/Razal\ Kondotty.jpg');
+                }
+                .saifudheen{
+                  background-image: url('../images/Saifudheen\ calicut.jpg');
+                  }
+                  .sampreeth{
+                    background-image: url('../images/Sampreeth\ Calicut.jpg');
+                    }
+                    .unais{
+                      background-image: url('../images/Unais\ malappuram.jpg');
+                      }
+.headinga h1{
+  color: #fcb735;
+  margin-top: 10px;
+}
+.aboutpara p{
+  margin: 20px;
+  color: #fcb735;
+}
+.alladmins{
+  width: 100%;
+  background-color: #fcb735;
+  padding-bottom: 10px;
+}
+.headingad h1{
+  color: #000;
+}
+.admcard{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+/* about page End */
+/* JoinForm page Start */
+.btn{
+  background-color: #fcb735;
+}
+#submit-form{
+  color: #fcb735;
+}
+#submit-form .md-form{
+  padding-bottom: 20px;
+}
+/* JoinForm page End */
+.success{
+  color: #fcb735;
+  font-size: 60px;
+}
+.successp{
+  color: #fcb735;
+  font-size: 40px;
+}
+
+.rules{
+  color: #fcb735;
+}
+
+footer i:hover{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+}
+
+footer i{
+  transition: 0.125s ease-in-out;
+  -webkit-transition: 0.125s ease-in-out;
+  -moz-transition: 0.125s ease-in-out;
+}
