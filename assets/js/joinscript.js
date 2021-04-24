@@ -59,7 +59,7 @@ $(document).ready(function(){
     $("#submit-form").submit((e)=>{
       e.preventDefault()
       $.ajax({
-          url:"https://script.google.com/macros/s/AKfycbwb7DyPKeeRs_LH6VzH1rbqcNzKmeiufJPbXR_GyOaOGjJNdNw/exec",
+          url:"https://script.google.com/macros/s/AKfycbx987PXSxyoLEiKUjhB6ZfHkOrCkvK-hMzHS_Zu/exec",
           data:$("#submit-form").serialize(),
           method:"post",
           success:function (response){
