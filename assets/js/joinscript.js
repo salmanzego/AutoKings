@@ -47,6 +47,9 @@ $(document).ready(function(){
           number:true,
           minlength:10,
           maxlength:10
+        },
+        rule:{
+          required:true
         }
       },
       messages:{

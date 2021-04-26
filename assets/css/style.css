@@ -372,6 +372,7 @@ background-image: url('../images/fabin.jpg');
 }
 .headingad h1{
   color: #000;
+  margin-top: 10px;
 }
 .admcard{
   margin-bottom: 20px;
